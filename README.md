@@ -139,7 +139,9 @@ Claude:
 
 ## 검증
 
-전체 기록: [skills/autopilot/tests/tdd-record.md](skills/autopilot/tests/tdd-record.md) — RED 3개, GREEN 6개 구간, REFACTOR 3개 시나리오. 전부 서브에이전트(`general-purpose`, Sonnet) 압박 테스트로 돌렸고, ★ 표시가 붙은 Red Flags 2행은 설계 검토가 아니라 테스트 중 실제로 관측된 합리화다. 나머지 10행은 설계 검토에서 나온 것이다 — 점검표처럼 "해당 없음"으로 짚고 넘어간 행은 관측으로 세지 않는다.
+전체 기록: [skills/autopilot/tests/tdd-record.md](skills/autopilot/tests/tdd-record.md) — RED 3개, GREEN 6개 구간, REFACTOR 3개 시나리오. 전부 서브에이전트(`general-purpose`, Sonnet) 압박 테스트로 돌렸고, ★ 표시가 붙은 Red Flags 3행은 설계 검토가 아니라 실제로 관측된 합리화다(2행은 테스트 중, 1행은 실사용 중). 나머지 11행은 설계 검토에서 나온 것이다 — 점검표처럼 "해당 없음"으로 짚고 넘어간 행은 관측으로 세지 않는다.
+
+**첫 실사용에서 시뮬레이션이 닿지 못한 결함이 하나 나왔다** — 에이전트가 진행 상황을 보고하려고 턴을 넘겨 런이 서버리는 문제. 단건 디스패치 검증은 애초에 한 턴이라 턴 연속성을 측정할 수 없었다. v1.0.1에서 `턴을 넘기는 것이 멈추는 것이다` 규칙으로 수정했다.
 
 **미검증** — 이 방법론(서브에이전트 시뮬레이션 워크스루)이 원천적으로 닿지 못한 영역.
 

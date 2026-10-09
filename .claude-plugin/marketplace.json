@@ -3,13 +3,13 @@
   "owner": { "name": "jinjan21" },
   "metadata": {
     "description": "골만 주고 자리를 비우는 작업을 위한 스킬.",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "autopilot",
       "description": "시간이나 완주가 명시된 오더에 발동. goal.md로 골을 잠그고 컨펌 없이 달리며, 되돌리기 비용이 급증하는 4개 지점에서 외부 검증자가 궤도 이탈을 판정한다. 멈추는 조건은 이탈 2회 연속뿐이다.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": { "name": "jinjan21" },
       "source": "./",
       "homepage": "https://github.com/jinjan21-lgtm/autopilot"

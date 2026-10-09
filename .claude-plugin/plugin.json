@@ -1,6 +1,6 @@
 {
   "name": "autopilot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "골을 판정 가능한 문장으로 잠근 뒤 사용자 컨펌 없이 달리고, 바깥눈이 궤도 이탈을 잡는 스킬.",
   "author": { "name": "jinjan21" },
   "homepage": "https://github.com/jinjan21-lgtm/autopilot",
